@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="formulario.css">
+</head>
+<body>
+
+    <div class="main-wrapper">
+        
+        <div class="info-container">
+            <h1>Contáctenos</h1>
+            <p>Contactanos y registrá tus datos para descubrir nuestra variedad de alimentos congelados de alta calidad, 
+                ideales tanto para el consumo diario como para tu negocio. Accedé a promociones exclusivas, precios competitivos y un servicio de entrega rápido y confiable.
+                Ya sea para tu hogar o para emprender, tenemos opciones pensadas para vos..</p>
+            <a href="index.html" target="_blank">
+                <button class="btn-more">VER MAS</button>
+            </a>
+        </div>
+
+        <div class="form-container">
+            <h2>Contacto</h2>
+            <form>
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" required>
+
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono">
+
+                <label for="motivo">Motivo de contacto</label>
+                <select id="motivo">
+                    <option>Consulta</option>
+                    <option>Soporte</option>
+                    <option>Reclamo</option>
+                </select>
+
+                <div class="options">
+                    <label>Preferencia de contacto:</label><br>
+                    <label><input type="radio" name="contacto"> Email</label>
+                    <label><input type="radio" name="contacto"> Teléfono</label>
+                </div>
+
+                <div class="options">
+                    <label><input type="checkbox"> Acepto términos y condiciones</label>
+                </div>
+
+                <label for="comentario">Comentario</label>
+                <textarea id="comentario" rows="3"></textarea>
+
+                <div class="buttons">
+                    <button type="submit" class="submit">Enviar</button>
+                    <button type="reset" class="reset">Reset</button>
+                </div>
+            </form>
+        </div>
+
+    </div> 
+</body>

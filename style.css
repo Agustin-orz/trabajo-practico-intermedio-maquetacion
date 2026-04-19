@@ -1,0 +1,17 @@
+@import url("inicio.css");
+@import url("conocenos.css");
+@import url("catalogo.css");
+@import url("contactos.css");
+@import url("Ubicacion.css");
+@import url("footer.css");
+@import url("galeria.css");
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+
+
+

@@ -1,0 +1,160 @@
+* {
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+
+body {
+    margin: 0;
+    height: 100vh;
+    /* Reemplaza 'tu-imagen.jpg' por el nombre de tu archivo */
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('img/BURGER4.avif');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.form-container {
+        width: 400px;
+        padding: 30px;
+        border-radius: 15px;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+        color: white;
+    }
+
+.main-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 50px; /* Espacio entre el texto y el formulario */
+    max-width: 900px;
+    width: 90%;
+}
+
+
+.info-container {
+    flex: 1;
+    color: white;
+}
+
+.info-container h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.info-container p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    opacity: 0.8;
+}
+
+.btn-more {
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 10px 25px;
+    cursor: pointer;
+    font-weight: bold;
+    width: auto; /* Para que no ocupe todo el ancho */
+}
+
+h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+label {
+        display: block;
+        margin-top: 10px;
+        font-size: 14px;
+    }
+
+input[type="text"], input[type="email"], input[type="tel"], textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 8px;
+    background: rgba(255,255,255,0.2);
+    color: white;
+}
+
+textarea {
+        resize: none;
+    }
+
+.options {
+        margin-top: 10px;
+    }
+
+.options label {
+        display: inline-block;
+        margin-right: 10px;
+    }
+
+.buttons {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+button {
+        width: 48%;
+        padding: 10px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+.submit {
+        background: #00c6ff;
+        color: black;
+    }
+
+.reset {
+        background: #ff4b5c;
+        color: white;
+    }
+
+button:hover {
+        opacity: 0.8;
+    }
+
+/* Media query para celulares y tablets */
+@media (max-width: 850px) {
+    body {
+        height: auto;
+        padding: 40px 0;
+    }
+
+    .main-wrapper {
+        flex-direction: column; /* Pone el texto arriba y el form abajo */
+        text-align: center;
+        gap: 30px;
+    }
+
+    .info-container {
+        padding: 0 20px;
+    }
+
+    .info-container h1 {
+        font-size: 2.2rem;
+    }
+
+    .form-container {
+        width: 90%; /* El formulario se adapta al ancho de la pantalla */
+        max-width: 400px;
+    }
+
+    .btn-more {
+        margin: 0 auto; /* Centra el botón en móviles */
+    }
+}

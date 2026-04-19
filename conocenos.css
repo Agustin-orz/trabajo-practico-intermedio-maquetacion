@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+
+
+.dis-sto .global{
+    margin-top: 6.9rem;
+}
+
+.global{
+    text-align: center;
+    margin-top: 3.9rem;
+}
+
+.global .circle{
+    color: #ce967b;
+    margin: 2.4rem 0;
+}
+
+.hea-dark{
+    color: white;
+}
+
+.global .hea-dark {
+    color: white;
+}
+
+
+.global .h2-sub{
+    color:white
+}
+
+.h2-sub .fil{
+    color:#ce967b;
+    text-transform: capitalize;
+}
+
+
+.res-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin: 2rem auto;
+    padding: 0 20px;
+    width: 100%;
+}
+
+.res-info img{
+    flex: 45%;
+    width: 38%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 80px;
+    background-color: #ce967b; 
+    padding: 5px;           
+    border-radius: 5px;
+    box-shadow: 0 0 20px 10px #ce967b;
+}
+
+.res-des{
+    margin-bottom: 3rem;
+    flex: 1;
+}
+
+.res-des p{
+    line-height: 1.6;
+    margin-bottom: 2.4rem;
+    color: white;
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(50px);
+  transition: all 1.5s ease; /* más lento */
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media screen and (max-width: 768px) {
+    .res-info {
+        flex-direction: column; 
+        text-align: center;
+        gap: 20px;
+    }
+
+    /* AGREGA ESTO AQUÍ ADENTRO */
+    .res-info img {
+        width: 90% !important;   /* Se agranda en celular */
+        margin-right: 0 !important; /* Se centra eliminando el margen de PC */
+    }
+}
