@@ -69,10 +69,42 @@
     color: white;
 }
 
+.btn-location {
+    display: inline-block;
+    background-color: #007bff; 
+    color: white;
+    padding: 12px 28px;        
+    border-radius: 50px;       
+    text-decoration: none;     
+    font-weight: bold;         
+    text-transform: uppercase; 
+    font-size: 14px;           
+    letter-spacing: 1px;       
+    transition: all 0.3s ease; 
+    border: 2px solid #007bff; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+    cursor: pointer;
+}
+
+
+.btn-location:hover {
+    background-color: transparent; 
+    color: #007bff ;     
+    transform: translateY(-3px);   
+    
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center; 
+    gap: 15px;
+    margin-top: 20px;
+}
+
 .reveal {
     opacity: 0;
     transform: translateY(50px);
-  transition: all 1.5s ease; /* más lento */
+    transition: all 1.5s ease; 
 }
 
 .reveal.active {
@@ -87,9 +119,9 @@
         gap: 20px;
     }
 
-    /* AGREGA ESTO AQUÍ ADENTRO */
+    
     .res-info img {
-        width: 90% !important;   /* Se agranda en celular */
-        margin-right: 0 !important; /* Se centra eliminando el margen de PC */
+        width: 90% ;   
+        margin-right: 0 ; 
     }
 }

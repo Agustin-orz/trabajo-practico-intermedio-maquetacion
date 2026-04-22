@@ -6,8 +6,10 @@
     <title>Document</title>
     <link  rel="stylesheet" href="Style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
 <body>
+    <!-- HEADER -->
     <header class="header">
         <div class="menu container">
             <a href="#" class="logo">Oeste Burger</a>
@@ -27,18 +29,23 @@
         </div>
     </header>
 
+    <!-- INICIO -->
     <section class="hero" id="início">
+        <video autoplay muted loop playsinline class="hero-video">
+            <source src="videos/Burger.mp4" type="video/mp4">
+        </video>
         <div class="hero-content container">
             <h1>¡Bienvenido a Oeste Burger!</h1>
             <p>Nuestros productos están pensados para quienes buscan confianza, 
                 excelencia y un sabor único que se mantenga en cada servicio y en cada cliente satisfecho 
             </p>
-            <a href="Formulario.html" class="btn-1">Realizar compra</a> 
+            <a class="btn-1">Realizar compra</a> 
         </div>
     </section>
 
 
     <main>
+        <!-- CONOCENOS -->
         <section class="dis-sto reveal" id="conocenos">
             <div class="container">
                 <div class="res-info active">
@@ -57,6 +64,9 @@
                             Trabajamos con materias primas seleccionadas y procesos cuidados para garantizar un resultado que cumpla con las expectativas de nuestros clientes. <br>
                             Disponemos de distintas sucursales estratégicamente ubicadas para garantizar cercanía, comodidad y una mejor atención a nuestros clientes.
                         </p>
+                        <div class="hero-buttons">
+                            <a href="https://www.google.com/maps/place/oeste+burger/@-34.6830411,-58.5928782,17z/data=!3m2!4b1!5s0x95bcc651935d51dd:0xe0ae1380bf471f6e!4m6!3m5!1s0x95bcc79eee3389ff:0xe8c00b347469df8f!8m2!3d-34.6830455!4d-58.5903033!16s%2Fg%2F11ghdr7rr2?entry=ttu&g_ep=EgoyMDI2MDQxOS4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="btn-location">Donde estamos</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -64,6 +74,7 @@
     
         <div class="perfect-dots"></div>
 
+        <!-- CATALOGO -->
         <div class="menu-container reveal" id="catálogo">
             <section class="menu-section">
             <h1>Catálogo</h1> 
@@ -449,6 +460,7 @@
                 
         <div class="perfect-dots"></div>
         
+        <!-- CONTACTOS -->
         <section class="contact-section reveal" id="contáctos">
             <div class="container">
                 <div class="contact-header">
@@ -499,34 +511,36 @@
         
         <div class="perfect-dots"></div>
 
+        <!-- GALERIA -->
         <section class="gallery-section reveal">
             <h1>Galería y productos</h1>
-
-            <div class="gallery">
-                <img src="img/img1.jpg">
-                <img src="img/img2.jpg">
-                <img src="img/img3.jpg">
-                <img src="img/img4.jpg">
-                <img src="img/img5.jpg">
-                <img src="img/img6.jpg">
-                <img src="img/img7.jpg">
-                <img src="img/img8.jpg">
-                <img src="img/img9.jpg">
-                <img src="img/img10.jpg">
-                <img src="img/img11.jpg">
-                <img src="img/img12.jpg">
-            </div>
-        </section> <br>
-
-        <div class="perfect-dots"></div>
             
-        <section class="location-section reveal">
-            <h1>Nuestra ubicación</h1>
-            <div class="map-container reveal">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.095462715469!2d-58.563579323414984!3d-34.67754006140206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc6286935be01%3A0xa072acc56816b433!2sPlaza%20San%20Justo!5e0!3m2!1ses!2sar!4v1775528858360!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">                    
-                </iframe>
-            </div> <br>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="img/img1.jpg"></div>
+                    <div class="swiper-slide"><img src="img/img2.jpg"></div>
+                    <div class="swiper-slide"><img src="img/img3.jpg"></div>
+                    <div class="swiper-slide"><img src="img/img4.jpg"></div>
+                    <div class="swiper-slide"><img src="img/img5.jpg"></div>
+                    <div class="swiper-slide"><img src="img/img6.jpg"></div>
+                    <div class="swiper-slide"><img src="img/img7.jpg"></div>
+                    <div class="swiper-slide"><img src="img/img8.jpg"></div>
+                    <div class="swiper-slide"><img src="img/img9.jpg"></div>
+                    <div class="swiper-slide"><img src="img/img10.jpg"></div>
+                    <div class="swiper-slide"><img src="img/img11.jpg"></div>
+                    <div class="swiper-slide"><img src="img/img12.jpg"></div>
+                </div>
+                
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
         </section>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="script.js"></script><br>
+
+        <!-- FOOTER -->
         <footer class="footer">
             <div class="footer-content">
                 <div class="footer-about">

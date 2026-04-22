@@ -5,7 +5,7 @@
     margin-left: -50vw;
     margin-right: -50vw;
     width: 100vw;
-    padding: 80px 0; /* Padding extra abajo para la onda */
+    padding: 80px 0; 
     text-align: center;
     background-image: linear-gradient(
         rgba(0,0,0,0.7),
@@ -22,13 +22,13 @@
     mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
 }
 
-/* Contenedor principal de contacto (sobre las ondas) */
+
 .contact-container {
     position: relative;
-    z-index: 5; /* Texto sobre la onda */
+    z-index: 5; 
 }
 
-/* Estilos de cabecera de contacto */
+
 .contact-header {
     margin-bottom: 70px;
 }
@@ -64,7 +64,7 @@
     line-height: 1.6;
 }
 
-/* Grilla de contactos */
+
 .contact-grid {
     display: flex;
     justify-content: space-around;
@@ -80,7 +80,7 @@
     text-align: center;
 }
 
-/* Círculos de iconos */
+
 .icon-circle {
     width: 90px;
     height: 90px;
@@ -124,12 +124,12 @@
     background-color: #55e088;
 }
 
-/* GMAIL: Mantiene el celeste original de la foto */
+
 .contact-item:nth-child(2) .icon-circle {
     background-color: #04a0ac;
 }
 
-/* REDES SOCIALES: Círculo Violeta */
+
 .contact-item:nth-child(3) .icon-circle {
     background-color: #c247bc;
 }
@@ -158,7 +158,7 @@
 .reveal {
     opacity: 0;
     transform: translateY(50px);
-  transition: all 1.5s ease; /* más lento */
+    transition: all 1.5s ease; 
 }
 
 .reveal.active {

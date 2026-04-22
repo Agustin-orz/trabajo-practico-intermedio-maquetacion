@@ -6,7 +6,7 @@
 body {
     margin: 0;
     height: 100vh;
-    /* Reemplaza 'tu-imagen.jpg' por el nombre de tu archivo */
+    
     background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('img/BURGER4.avif');
     background-size: cover;
     background-position: center;
@@ -32,7 +32,7 @@ html {
 .main-wrapper {
     display: flex;
     align-items: center;
-    gap: 50px; /* Espacio entre el texto y el formulario */
+    gap: 50px; 
     max-width: 900px;
     width: 90%;
 }
@@ -62,7 +62,7 @@ html {
     padding: 10px 25px;
     cursor: pointer;
     font-weight: bold;
-    width: auto; /* Para que no ocupe todo el ancho */
+    width: auto; 
 }
 
 h2 {
@@ -128,7 +128,7 @@ button:hover {
         opacity: 0.8;
     }
 
-/* Media query para celulares y tablets */
+
 @media (max-width: 850px) {
     body {
         height: auto;
@@ -136,7 +136,7 @@ button:hover {
     }
 
     .main-wrapper {
-        flex-direction: column; /* Pone el texto arriba y el form abajo */
+        flex-direction: column; 
         text-align: center;
         gap: 30px;
     }
@@ -150,11 +150,11 @@ button:hover {
     }
 
     .form-container {
-        width: 90%; /* El formulario se adapta al ancho de la pantalla */
+        width: 90%; 
         max-width: 400px;
     }
 
     .btn-more {
-        margin: 0 auto; /* Centra el botón en móviles */
+        margin: 0 auto; 
     }
 }
